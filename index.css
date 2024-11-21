@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #007bff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    grid-gap: 5px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius:15%;
+    box-shadow: 0 0 0 5px;
+    line-height: 75px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell.taken {
+    pointer-events: none;
+  }
+  
+  #winnerMessage {
+    margin-top: 20px;
+    text-decoration-color: yellow;
+    font-size:15px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #restartButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:24px;
+  }
+  
+  #restartButton:hover {
+    background-color: #0056b3;
+  }
+  
